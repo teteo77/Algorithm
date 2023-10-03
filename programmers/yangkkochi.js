@@ -3,3 +3,6 @@ function solution(n, k) {
     console.log(answer);
     return answer;
 }
+
+solution(10,3)
+// parseInt로 정수로 출력해야함
