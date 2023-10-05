@@ -14,5 +14,5 @@ function solution(num_list) {
 solution(arr);
 
 // num_list.length을 lenght로 줘서 오타나서 값을 못 읽어 오는 거 였다
-// nul_list.legnth를 arr.length로 선언하고
+// num_list.legnth를 arr.length로 선언하고
 // reverse.push(num_list[i]); 로 써준것도 틀린것 같다
