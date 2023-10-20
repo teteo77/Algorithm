@@ -1,4 +1,5 @@
 let arr= [1,2,3,4,5]
+console.log(arr)
 
 function solution(num_list) {
     let reverse = [];
