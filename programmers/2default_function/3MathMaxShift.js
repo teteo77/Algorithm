@@ -12,10 +12,10 @@ console.log("3Math.max: ",Math.max(...array1));
 // ===============================================================================
 
 // shift() 메서드는 배열에서 첫 번째 요소를 제거하고, 제거된 요소를 반환합니다. 이 메서드는 배열의 길이를 변하게 합니다.
-const array2 = [1, 2, 3];
-const firstElement = array1.shift();
+const shiftarr = [1, 2, 3];
+const shiftarrElement = shiftarr.shift();
 
-console.log("4Math.shift: ", array1);
+console.log("4shiftarr: ", shiftarr);
 // Expected output: Array [2, 3]
-console.log("5Math.shift: ",firstElement);
+console.log("shiftarrElement.shift: ",shiftarrElement);
 // Expected output: 1

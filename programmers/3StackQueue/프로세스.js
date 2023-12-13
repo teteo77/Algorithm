@@ -10,7 +10,7 @@ function solution(priorities, location) {
     for(let i = 0; i < priorities.length; i++){
         arr.push(i);
     }
-
+    
    //priorities 배열이 비어있을 때까지 반복
     while(priorities.length != 0){
         // Math.max() 함수는 입력값으로 받은 0개 이상의 숫자 중 가장 큰 숫자를 반환합니다.
@@ -21,6 +21,7 @@ function solution(priorities, location) {
             priorities.push(priorities.shift());
             // 
             arr.push(arr.shift());
+            
         }else {
             answer+=1;
             priorities.shift();
