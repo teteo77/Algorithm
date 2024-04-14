@@ -11,6 +11,18 @@ console.log("3Math.max: ",Math.max(...array1));
 
 // ===============================================================================
 
+// Math.floor() 함수는 주어진 숫자와 같거나 작은 정수 중에서 가장 큰 수를 반환합니다.
+
+console.log(Math.floor(5.95));
+// Expected output: 5
+
+console.log(Math.floor(-5.05));
+// Expected output: -6
+
+
+
+// ===============================================================================
+
 // shift() 메서드는 배열에서 첫 번째 요소를 제거하고, 제거된 요소를 반환합니다. 이 메서드는 배열의 길이를 변하게 합니다.
 const shiftarr = [1, 2, 3];
 const shiftarrElement = shiftarr.shift();
@@ -19,3 +31,5 @@ console.log("4shiftarr: ", shiftarr);
 // Expected output: Array [2, 3]
 console.log("shiftarrElement.shift: ",shiftarrElement);
 // Expected output: 1
+
+
