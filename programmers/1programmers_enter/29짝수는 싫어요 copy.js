@@ -4,14 +4,15 @@
 
 
 function solution(n) {
-    for(i=0; i<arr.length; i++){
-        if(arr[i]/2 == 1){
-            // arr와 1이 같으면 배열에 push해주기
-        }
+    for(i=0; i<n.length; i++){
+        // console.log(arr[i]%2 == 1)
+        let aa= n[i]%2 == 1;
+        console.log(aa)
     }
     var answer = [];
     return answer;
 }
+
 
 let arr = [1, 3, 5, 7, 9, 11, 13, 15];
 solution(arr)

@@ -1,6 +1,6 @@
 let ven_number=[];
 let odd_number=[];
-let arr=[1,2,3,4,5,6,7,8,9,10]
+let arr=[1,2,3,4,5,6,7,8,9,10,11]
 
 function solution(num_list) {
     for(let i=0; i<num_list.length; i++){
