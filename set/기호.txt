@@ -1,0 +1,5 @@
+
+나누기 할당	x /= y	x = x / y
+나머지 할당	x %= y	x = x % y
+
+https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Expressions_and_operators

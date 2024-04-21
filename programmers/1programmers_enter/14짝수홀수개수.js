@@ -10,7 +10,8 @@ function solution(num_list) {
             odd_number.push(num_list[i]);
         }
     }
-    var answer = [ven_number.length, odd_number.length];
+    // var answer = [ven_number.length, odd_number.length];
+    var answer = [ven_number, odd_number];
     // console.log(answer)
     return console.log(answer);
 }

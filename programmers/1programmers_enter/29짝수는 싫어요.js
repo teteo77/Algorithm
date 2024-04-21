@@ -2,16 +2,17 @@
 // return하도록 solution 함수를 완성해주세요.
 // 일단 홀수를 구하는 코드 만들기
 
+let arr = 10;
 
 function solution(n) {
-    for(i=0; i<arr.length; i++){
-        if(arr[i]/2 == 1){
-            // arr와 1이 같으면 배열에 push해주기
+    let answer = [];
+    for(let i=1; i<=n; i++){
+        if(i % 2 === 1){
+            answer.push(i)
+            console.log(answer)
         }
     }
-    var answer = [];
     return answer;
 }
 
-let arr = [1, 3, 5, 7, 9, 11, 13, 15];
 solution(arr)
