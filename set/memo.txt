@@ -1,0 +1,8 @@
+
+나누기 할당	x /= y	x = x / y
+나머지 할당	x %= y	x = x % y
+
+https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Expressions_and_operators
+
+https://velog.io/@bami/Javascript-%EC%97%B0%EC%82%B0%EC%9E%90-%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84
+    ㄴ 연산자 우선순위
