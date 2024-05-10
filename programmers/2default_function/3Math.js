@@ -13,10 +13,10 @@ console.log("3Math.max: ",Math.max(...array1));
 
 // Math.floor() 함수는 주어진 숫자와 같거나 작은 정수 중에서 가장 큰 수를 반환합니다.
 
-console.log(Math.floor(5.95));
+console.log("Math.floor: "+Math.floor(5.95));
 // Expected output: 5
 
-console.log(Math.floor(-5.05));
+console.log("Math.floor: "+Math.floor(-5.05));
 // Expected output: -6
 
 
