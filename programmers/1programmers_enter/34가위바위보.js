@@ -9,7 +9,9 @@ function solution(rsp){
         }else if(rsp[i]== 5){
             answer +=2
         }
-    }console.log(answer)
+    }
+    console.log(answer)
+    console.log(typeof(answer))
     return answer;
 }
 
