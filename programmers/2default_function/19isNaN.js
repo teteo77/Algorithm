@@ -2,7 +2,8 @@ function milliseconds(x) {
     if (isNaN(x)) {
       return 'Not a Number!';
     }
-    return x * 1000;
+    // return x * 1000;
+    return x;
   }
   
 console.log(milliseconds('100F'));
