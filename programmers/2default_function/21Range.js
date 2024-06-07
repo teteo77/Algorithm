@@ -17,6 +17,7 @@ function range(start, count){
     }
     return array;
 }
+console.log(range(1,20))
 
 function range(start, end, step=1){
     let array = [];
@@ -27,5 +28,5 @@ function range(start, end, step=1){
     }
     return array;
 }
-console.log(range(0, 5));
+console.log(range(0, 4));
 console.log(range(0, 20, 5));

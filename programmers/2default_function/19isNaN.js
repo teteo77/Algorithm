@@ -1,3 +1,5 @@
+isNaN함수는 숫자를 false로 반환한다
+
 function milliseconds(x) {
     if (isNaN(x)) {
       return 'Not a Number!';
