@@ -1,43 +1,47 @@
-// map함수에 itme매게변수가 뭐지
-let arr=[1,2,3]
-let arr2=[];
+// Array.map() 메소드는 콜백 함수를 이용해 
+// 각각의 요소에 호출해서 그 값을 변환할 수 있게 해줍니다. 
+// 다시 말하자면 콜백 함수는 배열의 각 요소에 실행됩니다.
 
-for(i=0; i<arr.length; i++){
-    arr2.push(arr[i]*2);
+// 예를 들어 다음과 같은 배열 요소가 있다고 가정해 봅시다
+
+let arr = [3, 4, 5, 6];
+
+// 이제 배열의 각 요소에 3을 곱해야 한다고 상4상해 봅시다. 
+// 다음과 같이 for 루프 사용을 고려할 지도 모릅니다:
+
+for (let i = 0; i < arr.length; i++){
+  arr[i] = arr[i] * 3;
 }
-console.log("arr: "+arr)
-console.log("arr2: "+arr2)
-console.log();
+console.log(arr); // [9, 12, 15, 18]
 
-// value는 arr에 있는 배열값을 가져온다. ㄱ
-const res1 = arr.map((value) => {
-    return value *2;
+// 그러나 사실 Array.map() 메소드를 사용한다면 이런 동일한 결과를 얻을 수 있습니다. 다음은 그에 대한 예시입니다:
+
+let modifiedArr = arr.map(function(element){
+    return element *3;
 });
-console.log("res1: "+res1)
+console.log(modifiedArr); // [9, 12, 15, 18]
 
-const res2 = arr.map((value) => value *2);
-console.log("res2: "+res2)
-console.log();
+// 일반적으로 Array.map() 메소드는 위의 코드에서와 같이 특정 숫자를 곱하거나, 
+// 애플리케이션에 필요한 다른 작업을 수행하는 등 요소에 어떤 변경 사항을 적용하는 데 사용됩니다.
 
-// value,index에 매개변수 이름은 다른걸로 해도 되고 순서에 맞게 선언해주면 된다. ㄱ
-const res3 = arr.map((value,index) => index);
-console.log("arr3_index "+ res3)
 
-// 대괄호에 감싸면 배열인데 res5처럼 소괄호() 중괄호{} 감싸주면 JSON타입인가? ☐
-const res4 = arr.map((value, index) => ["value: "+value ,"index: "+index]);
-console.log("arr4_index "+ res4)
-console.log();
+// 객체 배열에서 map()을 사용하는 방법
+// 예를 들어, 당신의 친구들의 firstName 및 lastName의 값을 저장하는 객체 배열이 있습니다:
 
-const res5 = arr.map((value, index) => ({ value, index }));
-console.log("arr5_index ", JSON.stringify(res5));
-console.log();
+// 다음과 같이 map() 메소드를 사용하여 배열을 순환하며 처리해서 firstName 및 lastName 값을 결합할 수 있습니다:
 
-const items=[{id:1, name:'Kossie'}, {id:2, name: 'Coder'}]
+let users = [
+    {firstName : "Susan", lastName: "Steward"},
+    {firstName : "Daniel", lastName: "Longbottom"},
+    {firstName : "Jacob", lastName: "Black"}
+  ];
+  
+  let userFullnames = users.map(function(element){
+      return `${element.firstName} ${element.lastName}`;
+  })
+  
+  console.log(userFullnames);
+  // ["Susan Steward", "Daniel Longbottom", "Jacob Black"]
 
-// const result = items.map((item)=>{id: item.id});
-// console.log(result)
 
-const result = items.map((item)=>{
-    return {id: item.id}
-});
-console.log(result)
+// 출저:https://www.freecodecamp.org/korean/news/javascript-map-method/
